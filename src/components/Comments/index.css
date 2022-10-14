@@ -1,0 +1,120 @@
+/* Write your CSS here */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  font-family: 'Roboto';
+  padding: 60px;
+}
+
+.head {
+  color: #1e293b;
+  font-size: 52px;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.input-name {
+  width: 280px;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd2d9;
+  outline: none;
+}
+
+.input-comment {
+  width: 280px;
+  height: 100px;
+  font-family: 'Roboto';
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd2d9;
+  outline: none;
+}
+
+::placeholder {
+  color: #475569;
+}
+
+.button {
+  background-color: #0284c7;
+  border: none;
+  border-radius: 2px;
+  color: #dee0e3;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 14px;
+  width: 110px;
+}
+
+.upper-image {
+  height: 300px;
+  width: 400px;
+}
+
+hr {
+  opacity: 0.5;
+  width: 88vw;
+  background-color: #cbd2d9;
+}
+
+.comments-count {
+  color: #334155;
+  font-size: 14px;
+}
+
+.number-count {
+  color: #ffffff;
+  padding: 6px;
+  background-color: #0284c7;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 0px;
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .main-container {
+    padding: 40px;
+  }
+  hr {
+    width: 80vw;
+  }
+  .upper {
+    flex-wrap: wrap;
+  }
+  .form-container {
+    order: 1;
+  }
+  .upper-image {
+    order: 0;
+    width: 300px;
+    height: 200px;
+  }
+}
